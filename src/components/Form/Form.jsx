@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import { Button, FormStyle, Input, TitleInput } from './Form.styled';
 import { addContacts } from 'redux/contactsSlice';
 
-export default function Form() {
+export const Form = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
@@ -45,4 +45,4 @@ export default function Form() {
       <Button type="submit">Додати контакт</Button>
     </FormStyle>
   );
-}
+};

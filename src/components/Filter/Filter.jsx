@@ -17,5 +17,3 @@ export const Filter = () => {
     </TitleInput>
   );
 };
-
-//  const handleDelete = () => dispatch(deleteContacts(id));
