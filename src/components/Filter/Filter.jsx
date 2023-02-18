@@ -6,7 +6,7 @@ export const Filter = () => {
   const dispatch = useDispatch();
   const handleInputValue = e => {
     const query = e.target.value;
-
+    console.log(query);
     dispatch(contactsFilter(query));
   };
 

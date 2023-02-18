@@ -6,8 +6,6 @@ import {
 import { useDispatch } from 'react-redux';
 import { deleteContacts } from 'redux/contactsSlice';
 
-import PropTypes from 'prop-types';
-
 export const ContactItem = ({ name, number, id }) => {
   const dispatch = useDispatch();
   const handleDelete = () => dispatch(deleteContacts(id));
@@ -22,10 +20,4 @@ export const ContactItem = ({ name, number, id }) => {
       </Button>
     </ContactCard>
   );
-};
-ContactItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  onDelete: PropTypes.func,
 };

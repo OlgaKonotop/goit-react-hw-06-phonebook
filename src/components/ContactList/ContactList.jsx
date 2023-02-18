@@ -9,7 +9,6 @@ export const ContactList = () => {
   console.log(contacts);
 
   const visibleContacts = contacts.filter(item => {
-    item.name = true;
     return item.name.toLowerCase().includes(filterValue);
   });
   console.log(visibleContacts);
@@ -27,5 +26,6 @@ export const ContactList = () => {
 ContactList.propTypes = {
   contacts: PropTypes.array,
   id: PropTypes.string,
-  onDelete: PropTypes.func,
+  name: PropTypes.string,
+  number: PropTypes.number,
 };
